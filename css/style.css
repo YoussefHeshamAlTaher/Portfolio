@@ -224,29 +224,39 @@ header {
 .hamburger {
     display: block;
     position: relative;
+	width: 3em;
+    height: 3px;
+    border-radius: 1px;
+	margin: 1px;
+	transition: transform 250ms ease-in-out;
+	
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
+    width: 3em;
     height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    border-radius: 1px;
+	
+	transition: transform 250ms ease-in-out;
+	
+	
 }
 
 .hamburger::before,
 .hamburger::after {
     content: '';
     position: absolute;
-    left: 0;
+	
+    
     right: 0;
 }
 
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: .5px; }
+.hamburger::after { bottom: .5px; }
 
 /* intro section */
 
@@ -260,7 +270,7 @@ header {
 
 @media (min-width: 600px) {
     .intro {
-        
+        padding-top: 0;
         display: grid;
         width: min-content;
         margin: 0 auto;
@@ -297,7 +307,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(img/services-bg.jpg);
+    background-image: url(img/services-bg.webp);
     background-size: cover;
     background-blend-mode: color-dodge;
     color: var(--clr-light);
