@@ -163,6 +163,8 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+	text-align: center;
+	margin-left: 3em;
 }
     
 
@@ -186,9 +188,10 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 0;
+    top: 6.3em;
     z-index: 1000;
+	padding-left: 3em;	
 }
 
 
@@ -223,12 +226,14 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: absolute;
 	width: 3em;
     height: 3px;
     border-radius: 1px;
-	margin: 1px;
-	transition: transform 250ms ease-in-out;
+
+	
+	
+	
 	
 }
 
@@ -239,8 +244,9 @@ header {
     width: 3em;
     height: 3px;
     border-radius: 1px;
-	
 	transition: transform 250ms ease-in-out;
+	
+	
 	
 	
 }
@@ -249,14 +255,14 @@ header {
 .hamburger::after {
     content: '';
     position: absolute;
+	right: 0;
+	left: 0;
 	
-    
-    right: 0;
 }
 
 
-.hamburger::before { top: .5px; }
-.hamburger::after { bottom: .5px; }
+.hamburger::before { top: 2px; }
+.hamburger::after { bottom: 2px; }
 
 /* intro section */
 
